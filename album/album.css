@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-03-21 18:49:03
+ * @version $Id$
+ */
+body{
+	margin:0;
+	padding:0;
+	color:#333;
+	font-family:Cambria, Georgia, serif;
+	font-size:15px;
+	overflow-x:hidden;
+	background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/*网页顶部的样式*/
+#menu-head{
+	position: relative;
+    z-index: 4;
+    background: rgba(0,0,0,0.6);
+    margin-bottom: 40px;
+    padding-bottom: 0px;
+}
+
+#menu-top{
+	height: 100%;
+	position: relative;
+	padding: 10px 20px;
+	margin-bottom: 30px;
+}
+
+#menu-bottom{
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	height: 100%;
+	padding: 0;
+	position: relative;
+	padding-top: 20px;
+	clear: both;
+}
+
+#menu{
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	height: 100%;
+}
+
+#menu a{
+	color: #000000;
+}
+
+#menu-top p{
+	position: relative;
+	float:left;
+	font-size: 30px;
+	color: white;
+	padding-left:10%;
+	font-family: Georgia,Times,Serif; 
+}
+/*分享网站图标*/
+#social-icons{
+	position: relative;
+	float: right;
+	height: 200%;
+	width: 20%;
+}
+
+#social-icons ul{
+	text-align: center;
+}
+
+#social-icons li{
+	position:relative;
+	display: inline-block;
+	padding-right:5%; 
+}
+
+#menu>li{
+	position: relative;
+	display: inline-block;
+	margin-right: 5%;
+	width: 10%;
+	height: 100%;
+	border-top-right-radius: 25%;
+	border-top-left-radius: 25%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-size: 20px;
+	border: 1px solid white;
+}
+
+#menu ul{
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: 130px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  text-align: center;
+  font-size: 80%;
+  color: #000;
+}
+
+#menu hr{
+	padding: 0;
+	margin: 0;
+}
+
+#menu>li:first-child{
+	background-color: #CC9933;
+}
+
+#menu>li:nth-child(2),
+#menu>li:nth-child(2) ul{
+	background-color: #CC9966;
+}
+
+#menu>li:nth-child(3),
+#menu>li:nth-child(3) ul{
+	background-color: #CC9999;
+}
+
+#menu>li:nth-child(4),
+#menu>li:nth-child(4) ul{
+	background-color: #999966;
+}
+
+#menu>li:last-child{
+	background-color: #669966;
+}
+
+
+#menu ul li {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  float: none; /*For Gecko*/
+  display: block !important;
+  display: inline; /*For IE*/
+}
+
+/* Root Menu Hover Persistence */
+#menu a{
+	padding: 0;
+}
+
+#menu li:hover,
+#menu li.iehover {
+    color: #000; 
+    background-color: #EEE;
+}
+
+#menu li:hover li:hover,
+#menu li:hover li:hover a,
+#menu li.iehover li.iehover,
+#menu li.iehover li.iehover a{
+  background: #993333;
+  color: #FFF;
+}
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+#menu li:hover ul,
+#menu li.iehover ul        /*针对IE浏览器不支持HOVER的现象，用类iehover*/
+{
+  display: block;
+  top: 20;
+}
+
+/*************************************************/
+section, footer{
+	display:block;
+}
+a {
+	color:#35BFFF;
+	text-decoration:none;
+}
+a:hover, a:active{
+	color:#91DCFF;
+}
+
+/* Footer */
+#footer{
+	width:100%;
+	position:fixed;
+	padding-left:20px;
+	bottom:0;
+	left:0;
+	line-height:20px;
+	color:#888;
+	font-size:13px;
+	background:rgb(0, 0, 0);
+	background:rgba(0, 0, 0, 0.8);
+	z-index:99;
+}
+#footer span{
+	display:block;
+}
+
+/* clearfix */
+.clearfix {
+	clear:both;
+}
+
+/* wrapper css */
+#wrapper{
+	margin-top:70px;
+	width:100%;
+}
+
+#wrapper h2{
+	margin:5px 0;
+	color:#FF6D99;
+	text-shadow:1px 1px 2px #A50031;
+	font-size:33px;
+	font-family:Arial Narrow, Arial, sans-serif;
+}
+#wrapper h3{
+	font-style:italic;
+	font-weight:normal;
+	font-size:18px;
+	text-shadow:1px 1px 0 #fff;
+	color:#888;
+	margin:5px 0;
+}
+
+#container{
+	position:relative;
+	width:1100px;
+	margin:0 auto 25px;
+	padding-bottom: 10px;
+	
+}
+
+.grid{
+	width:188px;
+	min-height:100px;
+	padding: 15px;
+	background:#fff;
+	margin:8px;
+	font-size:12px;
+	float:left;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	
+	-webkit-transition: top 1s ease, left 1s ease;
+	-moz-transition: top 1s ease, left 1s ease;
+	-o-transition: top 1s ease, left 1s ease;
+	-ms-transition: top 1s ease, left 1s ease;
+}
+
+.grid strong {
+	border-bottom:1px solid #ccc;
+	margin:10px 0;
+	display:block;
+	padding:0 0 5px;
+	font-size:17px;
+}/**一流素材网www.16sucai.com**/
+.grid .meta{
+	text-align:right;
+	color:#777;
+	font-style:italic;
+}
+.grid .imgholder img{
+	max-width:100%;
+	background:#ccc;
+	display:block;
+}
+
+@media screen and (max-width : 1240px) {
+	body{
+		overflow:auto;
+	}
+}
+@media screen and (max-width : 900px) {
+	#backlinks{
+		float:none;
+		clear:both;
+	}
+	#backlinks a{
+		display:inline-block;
+		padding-right:20px;
+	}
+	#wrapper{
+		margin-top:90px;
+	}
+}

@@ -1,0 +1,218 @@
+/*
+    project: web application template
+    author: luka cvrk (www.solucija.com)
+*/
+
+*{ 
+    margin: 0; 
+    padding: 0;
+    }*
+
+
+body { margin: 50px 0 0; 
+  background: #fff url('images/bg.gif') repeat-x; 
+  font: .74em "Trebuchet MS", Arial, Sans-Serif; 
+  color: #444; 
+}
+
+    h1 { 
+      font-size: 6em; 
+      font-weight: normal; 
+      float: left; 
+      padding-bottom: 20px;
+    }
+
+    h1 a { 
+      text-decoration: none; 
+    }
+
+    h2 { 
+      font-size: 2em; 
+      color: #FFF2B3; 
+      font-weight: normal; 
+      margin: 0 0 .8em; 
+    }
+
+    h3 { 
+      font-size: 1.5em; 
+      border-bottom: 1px solid #eee; 
+      margin: 0 0 .8em; 
+    }
+
+    p  { margin: 0 0 2em 0; 
+      line-height: 1.8em; 
+    }
+
+    em { border-bottom: 1px dotted #fff; 
+      cursor: pointer; 
+    }
+
+    a { color: #9D2900; 
+    }
+
+    a:hover { color: #A0000E; 
+      text-decoration: none; 
+    }
+
+    img { border: 0; 
+    }
+
+    .red { color: #9D2900; 
+    }
+
+.wrapbotton{
+    width: 900px;
+    margin: 0 auto;
+}
+
+#header { width: 900px; 
+  height: 50px; 
+  margin: 0 auto; 
+}
+
+#menu  { float: right; 
+  padding: 6px 0 0 0; 
+  list-style: none; 
+  margin-top: 0; 
+}
+        /*#menu li { display: inline-block; }*/
+ 
+#menu li {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  float: left; /*For Gecko*/
+  display: inline;
+  list-style: none;
+  position: relative;
+  height: 24px;
+}
+
+#menu ul {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: 130px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  text-align: center;
+}
+
+#menu ul li {
+  float: none; /*For Gecko*/
+  display: block !important;
+  display: inline; /*For IE*/
+}
+
+#menu a { 
+    display: block; 
+    float: left; 
+    margin-left: 30px; 
+    padding: 7px; 
+    text-decoration: none; 
+    font-size: 13px; 
+    color: #000000; 
+}
+
+#menu .active a { 
+    border-bottom: 2px solid #C70012; 
+    color: #9D2900;
+}
+
+/* Root Menu Hover Persistence */
+#menu a:hover,
+#menu li:hover a,
+#menu li.iehover a {
+    color: #000; 
+    border-bottom: 2px solid #ccc; 
+}
+
+/* 2nd Menu */
+ul#menu li:hover li a,
+ul#menu li.iehover li a {
+  float: none;
+  background: #EEE;
+  color: #666;
+}
+
+/* 2nd Menu Hover Persistence */
+ul#menu li:hover li a:hover,
+ul#menu li:hover li:hover a,
+ul#menu li.iehover li a:hover,
+ul#menu li.iehover li.iehover a {
+  background: #993333;
+  color: #FFF;
+}
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul#menu li:hover ul,
+ul#menu li.iehover ul        /*针对IE浏览器不支持HOVER的现象，用类iehover*/
+{
+  display: block;
+}
+
+
+#teaser { 
+    clear: both; 
+    height: 259px; 
+    background: #fff url('images/teaserbg.jpg') repeat-x; 
+}
+
+#image { 
+    margin-left: 100px;
+    margin-top: 45px; 
+    float: left; 
+    position: relative; 
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    border: 0px dotted black;
+    background-image: url('images/picture.jpg');
+    background-position:center;
+    border: 2px dotted #003333;
+}
+
+#basicInfor {
+    height: 239px;
+    width: 450px;
+    font-size: 1.4em;
+    font-family:courier;
+    display:inline-block;
+    position: relative;
+    top: 15%;
+    left: 3%
+}
+
+#basicInfor p {
+    background-color: #FFFF99;
+    padding: 0;
+    margin: 0.5em;
+}
+
+#basicInfor p span {
+    font-style:italic;
+    font-weight: bold;
+}
+
+.box { 
+    float: right; 
+    padding: 46px 20px 0 0;
+    width: 550px; 
+    color: #C7E3EE;
+}
+
+    
+#bar { height: 40px; margin: 0 0 30px; padding: 8px 0 0 0; background: url('images/bar.gif') repeat-x; }
+    .step { cursor: pointer; color: #FAFDDD; padding: 4px 0 0 11px; margin: 0 35px 0 0; font-size: 1.4em; float: left; text-align: center; background: url(../images/step.gif) no-repeat; height: 30px; }
+    .step a { color: #fff; margin: 0 10px 0 0; }
+    
+.col { float: left; width: 276px; margin: 0 30px 16px 0; }
+    .last { float: right; margin: 0; }
+    .info { border: 1px solid #e0e0e0; background: #f4f4f4; padding: 7px; }
+
+#footer { clear: both; width: 900px; margin: 0 auto; padding: 15px; border-top: 1px solid #e0e0e0; background: #fff url(../images/small_logotype.jpg) no-repeat right 13px; }   
+    #footer .right { float: right; margin: 0 55px 0 0; }
+    #footer a { color: #808080; font-weight: bold; }

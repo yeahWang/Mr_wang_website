@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-03-22 21:54:24
+ * @version $Id$
+ */
+ #menu-head {
+ 	margin-bottom: 50px;
+ }
+#menu-top p {
+	padding-left: 3%;
+	font-size: 20px;
+}
+
+#error {
+	width: 50%;
+	height: 150%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 0;
+	color: red;
+	font-size: 100%;
+}
+form {
+	position: relative;
+	height: 240px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1%;
+	padding-bottom: 0;
+}
+
+table{
+	position: relative;
+	height: 80%;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+table tr:first-child td:first-child,
+table tr:nth-child(2) td:first-child {
+	font-size: 22px;
+	font-family: Monospace;
+	font-weight: bold;
+	font-style: italic;
+	text-align: right;
+	color: #663300;
+}
+
+table tr:first-child td:nth-child(2),
+table tr:first-child td:nth-child(4) {
+	width: 10%;
+}
+
+table tr:first-child input {
+	height: 90%;
+	width: 90%;
+}
+
+table tr:nth-child(2) input{
+	height: 80%;
+	width: 85%;
+	background-color: #669966; 
+	border: 0;
+	border-radius: 6%;
+	font-size: 150%;
+}
+
+table tr:last-child td{
+	text-align: center;
+	padding-top: 6%;
+	padding-left: 10%;
+	font-weight: bold;
+}
+
+table tr:last-child input {
+	height: 90%;
+	width: 30%;
+	background-color: #339999;
+	border-radius: 5%;
+	border: 0;
+}
+
